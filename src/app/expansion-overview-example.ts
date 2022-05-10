@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 /**
  * @title Basic expansion panel
@@ -9,9 +9,8 @@ import {Component} from '@angular/core';
   styleUrls: ['expansion-overview-example.css'],
 })
 export class ExpansionOverviewExample {
-  panelOpenState = false;
+  panelOpenState = true;
 }
-
 
 /**  Copyright 2022 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
