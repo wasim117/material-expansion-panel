@@ -1,3 +1,4 @@
-# angular-rsuyy5
+# Material Expansion Panel
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-rsuyy5)
+Style Options and Theme Angular Material Expantion Panel
+
