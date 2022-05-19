@@ -1,54 +1,70 @@
+<h2>Default</h2>
 <!-- Default  -->
 <mat-accordion>
-<mat-expansion-panel hideToggle>
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      This is the expansion title 1
-    </mat-panel-title>
-    <mat-panel-description>
-      This is a summary of the content 1
-    </mat-panel-description>
-  </mat-expansion-panel-header>
-  <p>This is the primary content of the panel 1.</p>
-</mat-expansion-panel>
-<mat-expansion-panel>
-<mat-expansion-panel-header>
-  <mat-panel-title>
-    This is the expansion title 2
-  </mat-panel-title>
-  <mat-panel-description>
-    This is a summary of the content 2
-  </mat-panel-description>
-</mat-expansion-panel-header>
-<p>This is the primary content of the panel 2</p>
-</mat-expansion-panel>
-</mat-accordion>
-<p><br></p>
-<mat-accordion  displayMode="flat" togglePosition="before" class="mat-elevation-z0">
-<!-- #docregion basic-panel -->
-<!-- #docregion hide-toggle -->
-  <mat-expansion-panel  class="mat-elevation-z0">
-<!-- #enddocregion hide-toggle -->
+  <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
-      <mat-panel-title>
-        Panel Title 
-      </mat-panel-title>
+      <mat-panel-title> This is the expansion title 1 </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content 1
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel 1.</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> This is the expansion title 2 </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the content 2
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel 2</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<!-- HTML generated using hilite.me -->
+<h2>Flat and toggle position before</h2>
+<div
+  style="
+    background: #ffffff;
+    width: 800px;
+    border: solid gray;
+    border-width: 0.1em 0.1em 0.1em 0.8em;
+    padding: 0.2em 0.6em;
+    margin: 1rem;
+  "
+>
+  <pre
+    style="margin: 0; line-height: 125%"
+  ><span style="color: #007700">&lt;mat</span><span style="color: #0000CC">-accordion</span>  <span style="color: #0000CC">displayMode=</span><span style="background-color: #fff0f0">&quot;flat&quot;</span> <span style="color: #0000CC">togglePosition=</span><span style="background-color: #fff0f0">&quot;before&quot;</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;mat-elevation-z0&quot;</span><span style="color: #007700">&gt;</span>
+</pre>
+</div>
+<mat-accordion
+  displayMode="flat"
+  togglePosition="before"
+  class="mat-elevation-z0"
+>
+  <!-- #docregion basic-panel -->
+  <!-- #docregion hide-toggle -->
+  <mat-expansion-panel class="mat-elevation-z0">
+    <!-- #enddocregion hide-toggle -->
+    <mat-expansion-panel-header>
+      <mat-panel-title> Panel Title </mat-panel-title>
       <mat-panel-description>
         Panel Summary with hideToggle
       </mat-panel-description>
     </mat-expansion-panel-header>
     <p>This is content for Panel.</p>
     <mat-action-row>
-    <button mat-button color="primary">Ok</button>
-  </mat-action-row>
+      <button mat-button color="primary">Ok</button>
+    </mat-action-row>
   </mat-expansion-panel>
-<!-- #enddocregion basic-panel -->
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false" class="mat-elevation-z0">
+  <!-- #enddocregion basic-panel -->
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+    class="mat-elevation-z0"
+  >
     <mat-expansion-panel-header>
-      <mat-panel-title>
-        Title 
-      </mat-panel-title>
+      <mat-panel-title> Title </mat-panel-title>
       <mat-panel-description>
         Currently I am {{panelOpenState ? 'open' : 'closed'}}
       </mat-panel-description>
@@ -56,7 +72,6 @@
     <p>I'm visible because I am open</p>
   </mat-expansion-panel>
 </mat-accordion>
-
 
 <!-- Copyright 2022 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
